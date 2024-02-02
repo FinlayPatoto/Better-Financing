@@ -1,0 +1,41 @@
+/* Add your styling here */
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 95%;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+button {
+    background-color: #35a7f3;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px;
+    margin-bottom: -15px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push the footer to the bottom of the page */
+    width: 95%;
+}

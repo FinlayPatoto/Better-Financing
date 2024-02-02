@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Income Calculator</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .input-container {
+            display: flex;
+            justify-content: space-around;
+            /* Adjusted to provide space between input fields */
+            width: 100%;
+            max-width: 400px;
+            /* Added max-width to limit width for better responsiveness */
+            margin-bottom: 40px;
+        }
+
+        .input-container>div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-container label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-container input {
+            width: 150px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+        }
+
+        #weeks.numberOfWeeks {
+            width: 30px;
+            margin-left: -20px;
+        }
+
+        .update-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .update-button:hover {
+            background-color: #2980b9;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .box {
+            width: 100px;
+            height: 150px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .box:nth-child(1) {
+            background-color: #3498db;
+        }
+
+        .box:nth-child(2) {
+            background-color: #e74c3c;
+        }
+
+        .box:nth-child(3) {
+            background-color: #2ecc71;
+        }
+
+        .box:nth-child(4) {
+            background-color: #f39c12;
+        }
+
+        .box:nth-child(5) {
+            background-color: #9b59b6;
+        }
+
+        .box:nth-child(6) {
+            background-color: #34495e;
+        }
+
+        .value {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .savings-text {
+            font-size: 12px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="headerTitle"></h1>
+        <p id="headerSubtitle"></p>
+    </header>
+
+
+    <div class="title">Welcome to Better Financing!</div>
+
+    <p>We focus on weekly financing plans for your income after tax!</p>
+
+    <p>Try out our calculators for your finances!</p>
+
+    <div>&nbsp;</div>
+    <a href="livingExpenses.html"> Have Living Expenses? </a>
+    <div>&nbsp;</div>
+    <a href="noLivingExpenses.html"> Still living at home? </a>
+
+    <!-- Include the populated footer -->
+    <footer></footer>
+    
+
+
+
+    <!--HEADER INFORMATION-->
+    <link rel="stylesheet" href="header.css">
+    <script src="header.js"></script>
+    <!--END OF HEADER INFORMATION-->
+</body>
+
+</html>
