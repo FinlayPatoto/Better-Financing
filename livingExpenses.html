@@ -116,6 +116,18 @@
             background-color: #34495e;
         }
 
+        .box:nth-child(7) {
+            background-color: #db3434;
+        }
+
+        .box:nth-child(8) {
+            background-color: #46ce46;
+        }
+
+        .box:nth-child(9) {
+            background-color: #71e42e;
+        }
+
         .value {
             font-size: 24px;
             font-weight: bold;
@@ -175,8 +187,20 @@
             <div class="value" id="value6">After</div>
             <div class="savings-text">What's left over</div>
         </div>
+        <div class="box">
+            <div class="value" id="value7">Rent</div>
+            <div class="savings-text">30% goes to rent</div>
+        </div>
+        <div class="box">
+            <div class="value" id="value8">Food</div>
+            <div class="savings-text">10% goes to food</div>
+        </div>
+        <div class="box">
+            <div class="value" id="value9">I/H</div>
+            <div class="savings-text">15% goes to insurance and health care</div>
+        </div>
     </div>
-    
+
     <!-- Include the populated footer -->
     <footer></footer>
     <script>
@@ -202,6 +226,9 @@
             var after = parseInt(newValue1 - (newValue1 * .2) - (newValue1 * .5) - (newValue1 * .1));
 
             document.getElementById('value6').innerText = "$" + after;
+            document.getElementById('value7').innerText = "$" + parseInt(newValue1 * .3);
+            document.getElementById('value8').innerText = "$" + (parseInt(newValue1 * .5) - parseInt(newValue1 * .3)) * .5;
+            document.getElementById('value9').innerText = "$" + (parseInt(newValue1 * .5) - parseInt(newValue1 * .3)) * .5;
         }
     </script>
 
